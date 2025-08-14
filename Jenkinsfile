@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment {
+        DOCKER_BFLASK_IMAGE = 'your-dockerhub-username/my-flask-app:latest'
+        DOCKER_REGISTRY_CREDS = 'dockerhub-credentials-id'
+    }
 
     stages {
         stage('Build') {
