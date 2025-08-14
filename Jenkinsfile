@@ -1,4 +1,4 @@
-try this stages {
+stages {
     stage('Build') {
       steps {
         bat 'docker build -t myjava1 .'
